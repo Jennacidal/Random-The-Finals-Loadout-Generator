@@ -44,17 +44,17 @@ def show_loadout():
     # Create the main window
     root = tk.Tk()
     root.title("The Finals Random Loadout")
-    root.configure(bg="red")
+    root.configure(bg="#a41f35")
 
     # Initial loadout
     loadout = generate_loadout()
 
     # Display the loadout
-    label = tk.Label(root, text=loadout, bg="red", fg="white", font=("Saira ExtraCondensed ExtraBold", 20))
+    label = tk.Label(root, text=loadout, bg="#a41f35", fg="#fefffe", font=("Saira ExtraCondensed ExtraBold", 20))
     label.pack(padx=65, pady=20)
 
     # Add a "Refresh Loadout" button
-    refresh_button = tk.Button(root, text="Refresh Loadout", command=lambda: update_loadout(label), font=("Saira ExtraCondensed ExtraBold", 16))
+    refresh_button = tk.Button(root, text="Refresh Loadout", command=lambda: update_loadout(label), font=("Saira ExtraCondensed ExtraBold", 20))
     refresh_button.pack(pady=10)
 
     # Start the GUI event loop
